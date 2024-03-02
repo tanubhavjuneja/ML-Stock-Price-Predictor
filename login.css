@@ -13,7 +13,7 @@
     padding: 30px 40px;
     text-align: center;
     /* background-color: pink; */
-    backdrop-filter: blur(80px);
+    backdrop-filter: blur(25px);
     width: 50%;
     border: 3px solid white;
     border-radius: 16px;
