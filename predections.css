@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    padding:0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #191825;
+    color: white;
+}
+#active{
+    color:white;
+}
+
+
+.header{
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #191825;
+    /* font-family: "Jacquarda Bastarda 9", serif; */
+    font-family: "Roboto", sans-serif;
+}
+
+
+.navbar{
+    text-decoration: none;
+    
+}
+#login,#reg{
+    font-family: "Roboto", sans-serif;
+border: none;
+outline: none;
+}
+.navbar{
+    list-style: none;
+    display: flex;
+}
+.links{
+    display: inline-block;
+    text-decoration: none;
+    color: #737373;
+    padding: 0px 20px;
+}
+.links:hover{
+    color: white;
+    transition: ease 0.3s;
+}
+#login,#reg{
+    padding: 10px 20px;
+    border-radius: 100px;
+
+}
+#login{
+    background-color: #865DFF;
+    color: white;
+    
+}
+#reg{
+    background-color: transparent;
+    color: white;
+    padding:8px 20px;
+    border-bottom:3px solid #865DFF ;
+}
+
+.sec2{
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.sec2 h1{
+    font-size: 290%;
+}
+#tickerSymbol{
+    border-style: none;
+    background-color: transparent;
+    border:3px solid #865DFF;
+    border-radius: 20px;
+    width: 26%;
+    height: 70px;
+}
+#tickerSymbol::placeholder{
+    font-size: 20px;
+    padding-left: 9px;
+}
+#tickerSymbol:focus{
+    font-size: 20px;
+    padding-left: 9px;
+    border: 2px white;
+    color: white;
+}
+
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #865DFF;
+}
