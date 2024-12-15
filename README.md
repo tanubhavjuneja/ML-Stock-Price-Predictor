@@ -1,28 +1,51 @@
-Stock Prediction System
-This Python script predicts stock prices using linear regression and Yahoo Finance API.
+Stock Price Prediction Using Machine Learning
+This project predicts future stock prices dynamically using multiple machine learning models. The backend is built with Bottle (Python), and the frontend is created using HTML, CSS, and JavaScript.
 
-Description
-This program fetches historical stock data using Yahoo Finance API, preprocesses the data, trains a linear regression model, and predicts future stock prices. It also calculates the average offset between predicted and actual prices and adjusts the predictions accordingly.
+Tech Stack
+Backend: Python with Bottle framework
+Machine Learning Models: Linear Regression, Modified Linear Regression, Random Forest Regression, Gradient Boosting
+Frontend: HTML, CSS, JavaScript
+Libraries: pandas, math, sklearn
+Features
+Predicts next-day stock prices using multiple models.
+Dynamic adjustments with offsets.
+Interactive frontend for stock ticker input.
+Displays predicted stock data (Open, High, Low, Close, Volume).
+Project Structure
+bash
+Copy code
+/stock-prediction
+│
+├── /static
+│   ├── /css
+│   ├── /js
+│
+├── /templates
+│   └── index.html
+│
+├── /models
+│   └── stock_prediction.py
+│
+└── server.py
+Installation
+Clone the repository:
 
-Requirements
-Python 3.x
-yfinance library
-pandas library
-scikit-learn library
-matplotlib library
+bash
+Copy code
+git clone https://github.com/yourusername/stock-price-prediction.git
+cd stock-price-prediction
+Install dependencies:
+
+bash
+Copy code
+pip install -r requirements.txt
+Start the server:
+
+bash
+Copy code
+python server.py
+Open http://localhost:8080 in your browser.
+
 Usage
-Install the required libraries:
-
-bash
-Copy code
-pip install yfinance pandas scikit-learn matplotlib
-Run the script:
-
-bash
-Copy code
-python stock_prediction.py [ticker_symbol]
-Replace [ticker_symbol] with the symbol of the stock you want to predict.
-
-Output
-The script generates a graph (graph.png) showing the predicted stock prices for the next 60 days based on the trained model.
-
+Enter a stock ticker symbol (e.g., HDFCBANK.BO).
+Click "Predict" to get next-day stock price predictions.
